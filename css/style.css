@@ -2,6 +2,7 @@
   --desk-color: #2e2f42;
   --text-color: #434455;
   --button-color: #4d5ae5;
+  --gra-hero: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 h1,
 h2,
@@ -121,7 +122,14 @@ img {
 }
 
 .hero {
-  background-color: var(--desk-color);
+  max-width: 1440px;
+  height: 600px;
+  background-image: var(--gra-hero), url(../images/people_office.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding-top: 192px;
   padding-bottom: 192px;
