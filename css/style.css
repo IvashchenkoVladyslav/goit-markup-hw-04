@@ -67,16 +67,17 @@ img {
   color: var(--desk-color);
   margin-right: 77px;
 }
+
 .top-accent {
   color: var(--button-color);
 }
+
 .top-list {
   display: flex;
   gap: 40px;
 }
 
-.top-items {
-}
+
 .top-link {
   font-weight: 500;
   font-size: 16px;
@@ -220,8 +221,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.galery-photo {
-}
+
 /* ------------TEAM------------------- */
 .team {
   background-color: #f4f4fd;
@@ -248,8 +248,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.list {
-}
+
 .team-item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -272,6 +271,80 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-bottom: 12px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--button-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.team-soc-icon {
+  fill: #ffffff;
+}
+
+.team-soc-link:is(:hover, :focus) {
+  background-color: #ffffff;
+}
+
+.team-soc-link:is(:hover, :focus) .team-soc-icon {
+  fill: var(--button-color);
+}
+
+/* ----------Customers---------- */
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--desk-color);
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-item {
+  width: calc((100% - 120px) / 6);
+  height: 90px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.customers-icon {
+  fill: #8e8f99;
 }
 
 /* -----------FOOTER----------------- */
@@ -370,8 +443,7 @@ img {
   row-gap: 48px;
   padding-bottom: 20px;
 }
-.list {
-}
+
 .portfolio-item {
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
