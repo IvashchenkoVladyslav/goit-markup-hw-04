@@ -501,8 +501,7 @@ img {
 }
 
 .portfolio-item {
-  border: 0.5px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  outline: 0.5px solid #f4f4fd;
   width: calc((100% - 48px) / 3);
 }
 .subtitle-portfolio {
@@ -517,4 +516,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.portfolio-item :is(:hover, :focus){
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
